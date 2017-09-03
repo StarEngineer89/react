@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" type="image/png" href="/common/images/favicons/apple-touch-icon-114x114-precomposed.png" sizes="114x114"/>
+    <link rel="apple-touch-icon" type="image/png" href="/common/images/favicons/apple-touch-icon-144x144-precomposed.png" sizes="144x144"/>
+    <link rel="apple-touch-icon" type="image/png" href="/common/images/favicons/apple-touch-icon-72x72-precomposed.png" sizes="72x72"/>
+    <link rel="apple-touch-icon" type="image/png" href="/common/images/favicons/apple-touch-icon-precomposed.png"/>
+    <link rel="shortcut icon" type="image/png" href="/common/images/favicons/favicon.png"/>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-ND9WT4"
+        height="0" width="0" style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <script>
+      (function (){
+        function addScript(url){
+          document.write('<scri' + 'pt src="'+ url +'"></sc' + 'ript>')
+        }
+
+        var pathArr = window.location.pathname.split('/');
+        var isDev = window.location.hostname === 'localhost'
+                    || window.location.hostname === 'byebuy.staging.devguru.co'
+        var hostName = isDev ? '' : 'https://getgrover.com'
+
+        if(pathArr.length > 1 && pathArr[1]){
+          addScript(hostName + '/bundles/vendor.js')
+          addScript(hostName + '/bundles/' + decodeURIComponent(pathArr[1]) + '.js')
+        }
+      })();
+
+      // Google Tag Manager
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-ND9WT4');
+    </script>
+  </body>
+</html>

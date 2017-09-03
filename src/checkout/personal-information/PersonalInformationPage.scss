@@ -1,0 +1,102 @@
+.personal-information{
+
+  .account-type{
+    color: #2b2b2b;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2.4rem;
+
+    a{
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:hover{
+        color: #8217ff;
+      }
+    }
+  }
+
+  .terms{
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #787878;
+    letter-spacing: 0.1rem;
+
+    .text + .text{
+      margin-top: 1.5rem;
+    }
+    a{
+      color: #8217ff;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    input{
+      margin-right: 5px;
+    }
+    label{
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  .footer{
+    margin-top: 5rem;
+  }
+
+  .forgot{
+    text-align: right;
+
+    a{
+      font-size: 1.8rem;
+      color: #333;
+      letter-spacing: 0.24rem;
+      cursor: pointer;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .radio-shipping-address{
+    cursor: pointer;
+    margin-top: 1.5rem;
+    display: block;
+    color: #6E6E6E;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+
+    input{
+      margin-right: 1rem;
+      vertical-align: top;
+      position: relative;
+      top: 0.3rem;
+    }
+
+    .dark{
+      margin-left: 0.3rem;
+      color: #8217ff;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .section-title {
+    margin-top: 3.4rem;
+  }
+  .shipping-form {
+    margin: 0;
+
+    .row-control:last-child .form-control {
+      margin-bottom: 0;
+    }
+  }
+  .next-button {
+    margin-top: 1.5rem;
+  }
+}

@@ -1,0 +1,68 @@
+.personal-header{
+  margin-top: 4rem;
+  border-bottom: 1px solid #C3C3C3;
+
+  .container{
+    display: flex;
+    align-items: flex-end;
+    vertical-align: bottom;
+  }
+
+  .page-name{
+    color: #333;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-right: 3rem;
+    letter-spacing: 0.03rem;
+  }
+  .message{
+    color: rgba(51, 51, 51, 0.7);
+    font-size: 1.6rem;
+    letter-spacing: 0.08rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .personal-header{
+    .page-name{
+      font-size: 2.8rem;
+      line-height: 2.4rem;
+      margin-right: 2.5rem;
+    }
+    .message{
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .personal-header{
+    .page-name{
+      font-size: 2.5rem;
+      line-height: 2.2rem;
+      margin-right: 2rem;
+    }
+    .message{
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .personal-header{
+    .page-name{
+      font-size: 2.2rem;
+      line-height: 2rem;
+      margin-right: 1.2rem;
+    }
+    .message{
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+      margin-bottom: 0;
+    }
+  }
+}

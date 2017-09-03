@@ -1,0 +1,7 @@
+export { default as BackLine } from './BackLine.jsx'
+export { default as PageTitle } from './PageTitle.jsx'
+export { default as CheckoutItems } from './CheckoutItems.jsx'
+export { default as DesktopHeader } from './DesktopHeader.jsx'
+export { default as MobileHeader } from './MobileHeader.jsx'
+export { default as OrderFooter } from './OrderFooter.jsx'
+export { default as OrderFooterMobile } from './OrderFooterMobile.jsx'

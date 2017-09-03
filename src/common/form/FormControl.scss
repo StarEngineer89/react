@@ -1,0 +1,69 @@
+.form-control{
+  margin-bottom: 1.8rem;
+  position: relative;
+
+  input{
+    width: 100%;
+
+    &::-webkit-input-placeholder {
+      color: #787878;
+    }
+    &:-moz-placeholder {
+      color: #787878;
+    }
+  }
+
+  img{
+    color: #00a200;
+    float : right;
+    margin-bottom: -2.4rem;
+    z-index: 100;
+    position: relative;
+    top: 1.2rem;
+    margin-right: 2rem;
+  }
+
+  .strength{
+    float: right;
+    width: 9rem;
+    z-index: 100;
+    position: relative;
+    top: 2.3rem;
+    height: 2rem;
+    margin: 0 1.5rem -2rem 0;
+
+    .line{
+      display: inline-block;
+      width:30%;
+      height: 0.3rem;
+      margin-right: 0.2rem;
+    }
+
+    &.mark1 .line{
+      background: red;
+    }
+
+    &.mark2 .line{
+      background: #ff6b01;
+    }
+
+    &.mark3 .line{
+      background: #ffb601;
+    }
+
+    &.mark4 .line{
+      background: #c8c71c;
+    }
+
+    &.mark5 .line{
+      background: #009f00;
+    }
+
+    div{
+      margin-top: 0.3rem;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #787878;
+    }
+  }
+}

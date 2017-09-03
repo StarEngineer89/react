@@ -1,0 +1,100 @@
+.checkout-header{
+  overflow: hidden;
+  margin-bottom: 4rem;
+
+  &.center {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    > .logo{
+      float:none;
+      padding-top: 1.5rem;
+    }
+  }
+
+  > .logo{
+    float:left;
+    padding-top: 4.4rem;
+
+    &.external {
+      img {
+        width: 70.3rem;
+        height: 10.3rem;
+      }
+    }
+
+    img{
+      width: 14.3rem;
+    }
+  }
+  > .right-header{
+    float: right;
+    margin-top: 1.6rem;
+    text-align: right;
+    white-space: nowrap;
+    color: #333;
+    font-size: 1.4rem;
+
+    .sign{
+      letter-spacing: 0.09rem;
+
+      a{
+        font-size: 1.4rem;
+        color: #333;
+        text-decoration: none;
+        margin-right: 0.5rem;
+        letter-spacing: 0.09rem;
+        cursor: pointer;
+
+        &.bold{
+          font-weight: bold;
+        }
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .trust{
+      margin-top: 0.3rem;
+      min-height: 7rem;
+
+      .contact-hours{
+        display: inline-block;
+        padding: 0.8rem 0.7rem 0.4rem 1rem;
+        vertical-align: middle;
+        border: 1px solid #dbdbdb;
+        background: #f4f4f4;
+        line-height: 2.1rem;
+        margin-left: 3.5rem;
+        position: relative;
+        top: 0.2rem;
+
+        img{
+          margin-right: 0.5rem;
+          vertical-align: middle;
+        }
+        strong{
+          margin-left: 0.4rem;
+          letter-spacing: 0.09rem;
+        }
+        .times{
+          display: block;
+          font-size: 1.2rem;
+          margin-top: 0.5rem;
+          letter-spacing: 0.08rem;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .checkout-header{
+    > .logo img {
+        width: 14.3rem;
+    }
+  }
+}

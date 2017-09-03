@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="37px" viewBox="0 0 38 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6 (26304) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape + Oval 125</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-13.4887914%" y1="-11.486128%" x2="100%" y2="175.78396%" id="linearGradient-1">
+            <stop stop-color="#FB9A9C" offset="0%"></stop>
+            <stop stop-color="#4222F1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-Payment-Copy-4" transform="translate(-637.000000, -253.000000)">
+            <g id="Your-order-has-been--+-Shape-+-Oval-125" transform="translate(638.500000, 254.000000)">
+                <g id="Shape-+-Oval-125">
+                    <path d="M24.8199944,12.0772287 C25.4175449,12.6747792 25.4175449,13.6308601 24.8199944,14.1686556 L16.0360011,22.9526489 C15.7372258,23.2514242 15.3786955,23.3709343 14.9604101,23.3709343 L14.9604101,23.3709343 C14.5421247,23.3709343 14.1835944,23.1916691 13.8848191,22.9526489 L10.1800056,19.2478354 C9.58245506,18.6502848 9.58245506,17.6942039 10.1800056,17.1564084 C10.7775562,16.5588579 11.7336371,16.5588579 12.2714326,17.1564084 L14.9006551,19.7856309 L22.6688124,12.0772287 C23.326118,11.4796781 24.2821989,11.4796781 24.8199944,12.0772287 L24.8199944,12.0772287 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                    <circle id="Oval-125" stroke="#A562C3" stroke-width="2" cx="17.5" cy="17.5" r="17.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,70 @@
+.location-control{
+  position: relative;
+
+  input{
+    width: 100%;
+    margin-bottom: 2.6rem;
+  }
+
+  img{
+    color: #00a200;
+    position: absolute;
+    z-index: 100;
+    top: 1.4rem;
+    right: 2rem;
+  }
+
+  .location-note{
+    padding-left: 2.7rem;
+    font-size: 1.4rem;
+    color: #616161;
+    letter-spacing: 0.16rem;
+    margin-bottom: 4rem;
+
+    .bold{
+      color: #333;
+      letter-spacing: 0.11rem;
+    }
+  }
+
+  .row{
+    position: relative;
+  }
+
+  .button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 6.4rem;
+    width: 11rem;
+    border-radius: 0 5px 5px 0;
+    background: #F6205A;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 6.4rem;
+    text-align: center;
+    letter-spacing: 0.09rem;
+    cursor: pointer;
+    border: none;
+
+    &:hover{
+      background: #F6205A;
+      box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    &:disabled{
+      background: #ccc;
+      cursor: default;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .location-control {
+    input {
+      margin-bottom: 0;
+    }
+    .location-note {
+      display: none;
+    }
+  }
+}

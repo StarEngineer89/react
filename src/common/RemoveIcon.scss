@@ -1,0 +1,13 @@
+.remove-icon{
+  cursor: pointer;
+
+  &:hover{
+    circle{
+      stroke:#B6B6B6;
+      fill:#4C4C4C;
+    }
+    rect{
+      fill: #E0E0E0;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.form-select{
+  select{
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    height: 5rem;
+    padding: 0 2rem 0 1.9rem;
+    font-size: 1.6rem;
+    color: #787878;
+    letter-spacing: 0.09rem;
+    -webkit-appearance: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    background: url(/checkout/images/select.svg) 90% 50% no-repeat;
+  }
+}

@@ -1,0 +1,267 @@
+.bd-items{
+  .column-one, .column-two, .column-three, .column-four, .column-total{
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .column-one {
+    width: 55%;
+    border-right:1px solid #c3c3c3;
+  }
+  .column-two {
+    width: 15%;
+    border-right:1px solid #c3c3c3;
+  }
+  .column-three {
+    width: 13%;
+    border-right:1px solid #c3c3c3;
+  }
+  .column-four {
+    width: 17%;
+  }
+
+  .items-head {
+    display: flex;
+    background: #e3e3e3;
+
+    p{
+      height: 4.8rem;
+      color: #333;
+      font-size: 1.6rem;
+      line-height: 5rem;
+      letter-spacing: .09rem;
+      margin : 0;
+    }
+
+    .column-one{
+      font-weight: bold;
+      text-transform: uppercase;
+
+      p{
+        font-size: 1.6rem;
+        letter-spacing: .2rem;
+      }
+    }
+  }
+
+
+  .item-row {
+    display: flex;
+
+    .column-one,
+    .column-two,
+    .column-three,
+    .column-four {
+      min-height: 11rem;
+      line-height: 11rem;
+
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: #333;
+      text-align: center;
+      letter-spacing: 0.1rem;
+    }
+
+    .column-one{
+      text-align: left;
+      display: flex;
+      align-items: center;
+
+      .image{
+        width: 20%;
+        flex-shrink: 0;
+        line-height: normal;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .label{
+        flex-shrink: 1;
+        flex-grow: 1;
+        font-size: 1.6rem;
+        line-height: normal;
+        padding-right: 6%;
+      }
+
+    }
+
+    .column-three{
+      input {
+        margin-top: 4rem;
+        background: #dbdbdb;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem;
+        text-align: center;
+        width: 5rem;
+      }
+    }
+
+    .column-four{
+      text-align: right;
+
+      span{
+        display: inline-block;
+        vertical-align: middle;
+        letter-spacing: 0.14rem;
+      }
+      svg{
+        vertical-align: middle;
+        position: relative;
+        top: -0.2rem;
+        cursor: pointer;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+
+    &.last-row{
+      border-top: 1px solid #4e4e4e;
+
+      .column-one{
+        border-right: none;
+      }
+
+      .column-total{
+        position: relative;
+        left: -0.1rem;
+        border-left: 1px solid #c3c3c3;
+        min-height: 20rem;
+      }
+    }
+
+    .column-total {
+      width: 45%;
+      padding: 0.6rem 4rem;
+      text-align: left;
+
+      p{
+        display: block;
+        padding: 3.2rem 0 0.8rem;
+        margin: 0;
+        border-bottom: 1px solid #dbdbdb;
+        color: #636363;
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+
+        &.last{
+          border-bottom: none;
+          font-weight: bold;
+          color: #333;
+        }
+
+        > :first-child{
+          text-transform: uppercase;
+        }
+
+        span + span{
+          float: right;
+          letter-spacing: 0.16rem;
+
+          span{
+            margin-right: 0.2rem;
+          }
+        }
+
+        &.last .no-tax {
+          float: none;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+  .bd-items {
+    .column-one {
+      width: 54%;
+    }
+    .column-four{
+      width: 18%;
+    }
+
+    .item-row {
+      .column-total{
+        width: 46%;
+      }
+
+      .column-one {
+        img {
+          max-width: 25%;
+          margin-right: 4%;
+        }
+        .label {
+          width: 63%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .bd-items {
+
+    .column-one {
+      width: 51%;
+    }
+    .column-four{
+      width: 21%;
+    }
+
+    .item-row {
+
+      .column-total{
+        width: 49%;
+      }
+
+      .column-one {
+        img {
+          max-width: 20%;
+          margin-right: 4%;
+        }
+        .label {
+          width: 68%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .bd-items {
+    .column-one {
+      width: 46%;
+    }
+    .column-two {
+      width: 17%;
+    }
+    .column-four{
+      width: 24%;
+    }
+
+    .item-row {
+      .column-total{
+        width: 54%;
+
+        p{
+          font-size: 1.5rem;
+          padding: 3rem 0 0.6rem;
+        }
+      }
+
+      .column-one {
+        img {
+          max-width: 15%;
+          margin-right: 3%;
+        }
+        .label {
+          width: 78%;
+        }
+      }
+    }
+  }
+}

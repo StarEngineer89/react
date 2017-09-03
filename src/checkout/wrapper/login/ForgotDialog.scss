@@ -1,0 +1,43 @@
+.forgot-dialog.sbb-dialog{
+  padding-top: calc(50vh - 28.5rem);
+
+  .sbb-dialog-body{
+    padding: 0 0 4rem;
+  }
+
+  .remove-icon{
+    position: absolute;
+    top: 1.8rem;
+    right: 2.8rem;
+    cursor: pointer;
+  }
+
+
+  .header{
+    background: #c9c9c9;
+    border-radius: 5px 5px 0 0;
+    height: 5.8rem;
+    color: #333;
+    font-size: 2rem;
+    line-height: 5.8rem;
+    letter-spacing: 0.13rem;
+    margin-bottom: 3.4rem;
+  }
+
+  .note{
+    color: #787878;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.09rem;
+    margin-bottom: 3.8rem;
+  }
+
+  .form-control{
+    margin-bottom: 3.8rem;
+  }
+
+  .btn.red{
+    padding: 1.4rem 3.1rem;
+  }
+
+}

@@ -1,0 +1,39 @@
+@keyframes show-error {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.global-error{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 5rem 1.5rem 5%;
+  background: #8217ff;
+  border-bottom: #979797;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  animation: show-error 0.5s ease;
+
+  a {
+    color: #fff;
+  }
+
+  .remove-icon{
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    cursor: pointer;
+    width: 2.4rem;
+    height: 2.4rem;
+
+    circle{
+      stroke: #8217ff;
+    }
+  }
+}

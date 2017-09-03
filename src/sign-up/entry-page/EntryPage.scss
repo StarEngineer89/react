@@ -1,0 +1,45 @@
+.entry-page{
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .secure-block{
+    width: 46%;
+    padding-right: 2%;
+    align-self: flex-start;
+    margin-top: 13rem;
+    flex-shrink: 0;
+  }
+
+  .secure-block + div{
+    width: 52%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .entry-page{
+    .secure-block {
+      margin-left: auto;
+      margin-right: auto;
+
+      .text{
+        margin: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .entry-page{
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .secure-block {
+      display: none;
+    }
+
+    .secure-block + div {
+      width: auto;
+    }
+  }
+}

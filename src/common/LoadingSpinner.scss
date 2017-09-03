@@ -1,0 +1,15 @@
+.loading-spinner {
+  text-align: center;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  &-small {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

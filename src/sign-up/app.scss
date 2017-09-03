@@ -1,0 +1,17 @@
+.container{
+  width: 90%;
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    padding: 0;
+  }
+}
+
+#app{
+  padding-bottom: 10rem;
+}

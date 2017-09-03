@@ -1,0 +1,55 @@
+.personal-info-page{
+  padding: 4rem 6% 10% 8%;
+  margin: 0 auto;
+  max-width: 90rem;
+  box-sizing: border-box;
+
+  .terms{
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: #787878;
+    letter-spacing: 0.1rem;
+
+    .text + .text{
+      margin-top: 1.5rem;
+    }
+    a{
+      color: #3A5CFE;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    input{
+      margin-right: 5px;
+    }
+    label{
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  .next-button{
+    margin-top: 1.5rem;
+
+    button.btn.green{
+      width: 100%;
+      padding: 1.5rem 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .personal-info-page .section-title {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .personal-info-page {
+    padding: 4rem 0 10% 0;
+  }
+}

@@ -1,0 +1,14 @@
+.section-title{
+  border-bottom: 1px solid #a3a3a3;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem 0 1rem 5%;
+  color: #333;
+  letter-spacing: 0.11rem;
+  margin: 5.5rem 0 3rem;
+
+  &.first{
+    margin-top: 0;
+  }
+
+}

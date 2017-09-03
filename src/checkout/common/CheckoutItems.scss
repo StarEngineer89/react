@@ -1,0 +1,125 @@
+.checkout-items{
+
+  .head{
+    height: 4.8rem;
+    background: #e3e3e3;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    color: #333;
+    font-size: 1.6rem;
+    line-height: 5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .footer{
+    min-height: 4.8rem;
+    background: #e3e3e3;
+    border-radius: 0 0 5px 5px;
+    color: #2F2F2F;
+    font-size: 1.6rem;
+    line-height: 5rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+
+    .left{
+      margin-left: 5%;
+    }
+
+    .right{
+      margin-right: 5%;
+      letter-spacing: 0.16rem;
+
+      span{
+        margin-left: 0.2rem;
+      }
+    }
+
+    .usa-tax {
+      font-size: 1.2rem;
+    }
+  }
+
+  .items{
+    max-height: 37rem;
+    background: #f2f2f2;
+    overflow: auto;
+    padding: 2rem 3% 2rem 0;
+
+    .item{
+      display: flex;
+      align-items: center;
+      min-height: 10rem;
+
+      > .image{
+        width: 33%;
+        text-align: center;
+        flex-shrink: 0;
+
+        img{
+          max-width: 80%;
+        }
+      }
+      > .details{
+        flex-grow: 1;
+        font-size: 1.4rem;
+      }
+      .name{
+        color: #2f2f2f;
+        letter-spacing: 0.11rem;
+        display: block;
+        margin-bottom: 1.7rem;
+        padding-top: 1rem;
+        line-height: 1.5;
+      }
+      .row{
+        display: flex;
+        justify-content: space-between;
+        color: #333;
+
+        .price{
+          letter-spacing: 0.15rem;
+          span + span{
+            margin-left: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .checkout-items {
+    .items .item{
+      .name{
+        letter-spacing: 0.06rem;
+      }
+      .row{
+        font-size: 1.4rem;
+        .count{
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .checkout-items {
+    .items .item{
+      .name{
+        letter-spacing: 0.04rem;
+      }
+      .row{
+        font-size: 1.2rem;
+        .count{
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .footer {
+      font-size: 1.4rem;
+    }
+  }
+}

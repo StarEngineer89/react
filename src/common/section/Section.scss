@@ -1,0 +1,36 @@
+.sbb-section{
+  padding: 0 2% 0 2%;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.long{
+    padding: 0 2% 0 5%;
+  }
+
+  &.sign-up{
+    padding: 0 11% 0 9%;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sbb-section {
+    padding: 0 2% 0 5%;
+
+    &.sign-up{
+      padding: 0 5% 0 5%;
+    }
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .sbb-section {
+    padding: 0 2% 0 5%;
+
+    &.sign-up{
+      padding: 0 2% 0 5%;
+    }
+  }
+}

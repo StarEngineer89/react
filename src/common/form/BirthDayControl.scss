@@ -1,0 +1,15 @@
+.birth-day-control{
+  margin-bottom: 1.8rem;
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+
+    .form-select{
+      width: 31%;
+      select{
+        color: #787878;
+      }
+    }
+  }
+}

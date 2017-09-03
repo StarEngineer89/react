@@ -1,0 +1,110 @@
+#brain-tree-form{
+  position: relative;
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+
+    > div{
+      flex-shrink: 1;
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
+
+    > div + div{
+      margin-left: 6%;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  }
+
+  .control{
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    padding: 1.3rem 1.5rem 1.3rem 1.9rem;
+    height: 2.2rem;
+    margin-bottom: 1.8rem;
+    position: relative;
+
+    img{
+      display: none;
+      position: absolute;
+      top: 1.2rem;
+      right: 2rem;
+    }
+
+    &.braintree-hosted-fields-valid{
+      img{
+        display: block;
+      }
+    }
+  }
+
+  input[type=submit]{
+    display: none;
+  }
+
+  .payment-shadow{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 18.6rem;
+    text-align: center;
+    line-height: 18.6rem;
+    background: rgba(242, 242, 242, 0.6);
+    color: green;
+    border-radius: 5px;
+  }
+}
+
+.brain-tree-form{
+  .text{
+    font-size: 1.4rem;
+    color: #333;
+    letter-spacing: 0.14rem;
+    margin-bottom: 2.5rem;
+
+    &.mandatory {
+      padding-top: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    img{
+      margin-left: 1rem;
+      position: relative;
+      top: 0.2rem;
+    }
+  }
+
+  > .form-control input{
+    color: rgba(51, 51,51, 0.7);
+
+    &:focus{
+      color: rgba(51, 51,51, 0.8);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #brain-tree-form{
+    .row{
+      flex-wrap: wrap;
+
+      > div{
+        width: 100%;
+      }
+
+      > div + div{
+        margin-top: 1.8rem;
+        margin-left: 0;
+      }
+    }
+
+    .payment-shadow{
+      height: 25.4rem;
+      line-height: 25.4rem;
+    }
+
+  }
+}

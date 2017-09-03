@@ -1,0 +1,9 @@
+test:
+  override:
+    - "echo 'smuteczek'"
+deployment:
+  staging:
+    branch: develop
+    commands:
+      - bundle exec cap staging deploy:
+          timeout: 720

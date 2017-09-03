@@ -1,0 +1,45 @@
+.coupon-block{
+  position: relative;
+
+  input{
+    width: 100%;
+  }
+
+  .button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 5rem;
+    width: 11rem;
+    border-radius: 0 5px 5px 0;
+    background: #32B452;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 5rem;
+    text-align: center;
+    letter-spacing: 0.09rem;
+    cursor: pointer;
+    border: none;
+
+    &:hover{
+      background: #32be52;
+    }
+    &:disabled{
+      background: #ccc;
+      cursor: default;
+    }
+  }
+
+  .coupon-text{
+    padding: 2rem 0;
+    color: #333;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+
+  img{
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+  }
+}

@@ -1,0 +1,29 @@
+.page-title{
+  border-bottom: 1px solid #c3c3c3;
+  padding-bottom: 0.3rem;
+  margin-bottom: 3.5rem;
+
+  h1{
+    color: #333;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.15rem;
+    margin: 0;
+  }
+
+  &.content h1{
+    white-space: nowrap;
+    align-self: flex-end;
+    margin-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+  .page-title {
+    text-align: center;
+    padding: 0.5rem 0 2rem 0;
+    margin: 0;
+    letter-spacing: 0.1rem;
+  }
+}

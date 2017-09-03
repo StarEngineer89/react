@@ -1,0 +1,28 @@
+FROM quay.io/netguru/baseimage:0.9.18.1
+
+RUN bootstrap node
+RUN apt-get install -y nginx
+
+RUN npm install -g npm
+
+ENV APP_HOME /var/www/app
+ENV VIRTUAL_HOST=react-byebuy.staging
+RUN mkdir -p $APP_HOME
+WORKDIR $APP_HOME
+
+ADD package.json $APP_HOME/
+
+RUN npm install
+
+ADD . $APP_HOME/
+
+RUN npm run build
+
+ADD docker/staging.nginx.conf /etc/nginx/sites-available/default
+ADD docker/staging.service.nginx /etc/service/nginx/run
+
+EXPOSE 3000
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/sbin/my_init"]
+
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

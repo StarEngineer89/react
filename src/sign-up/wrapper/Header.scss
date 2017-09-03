@@ -1,0 +1,48 @@
+.sign-up-header{
+  height: 6rem;
+  background: #ECECEC;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  div{
+    transition: all 0.9s ease;
+  }
+
+  img{
+    transition: all 0.9s ease;
+    width: 10.8rem;
+  }
+
+  .menu{
+    a{
+      font-size: 1.4rem;
+      letter-spacing: 0.1rem;
+      color: #787878;
+      text-decoration: none;
+      margin-left: 3.2rem;
+      cursor: pointer;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .sign-up-header{
+    .menu{
+      display: none;
+    }
+    .container div{
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.sign-in-block{
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  padding: 3rem 4%;
+
+  .head{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333;
+    letter-spacing: 0.21rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  .change-action{
+    font-size: 1.4rem;
+    color: #787878;
+    letter-spacing: 0.11rem;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    a{
+      color: #8217ff;
+      cursor: pointer;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .forgot{
+    text-align: right;
+    font-size: 1.2rem;
+    letter-spacing: 0.24rem;
+    margin-bottom: 2rem;
+
+    a{
+      color: #333;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .next-button {
+    margin-top: 2rem;
+
+    .btn{
+      padding: 1.5rem 3.2rem;
+    }
+  }
+}

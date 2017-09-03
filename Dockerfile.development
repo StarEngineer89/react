@@ -1,0 +1,22 @@
+FROM quay.io/netguru/baseimage:0.9.18.1
+
+RUN bootstrap node
+RUN npm install -g npm
+
+ENV APP_HOME /var/www/app
+ENV HOST 0.0.0.0
+
+RUN mkdir -p $APP_HOME
+WORKDIR $APP_HOME
+
+ADD package.json $APP_HOME/
+RUN npm install
+
+ADD . $APP_HOME/
+
+EXPOSE 8080
+ENTRYPOINT ["/entrypoint.sh"]
+
+CMD ["npm", "run", "start"]
+
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

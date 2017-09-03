@@ -1,0 +1,47 @@
+.checkout-payment{
+  .radio-shipping-address{
+    cursor: pointer;
+    display: block;
+
+    input{
+      margin-right: 1rem;
+      vertical-align: top;
+      position: relative;
+      top: 0.3rem;
+    }
+    span{
+      color: #6E6E6E;
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+
+      &.dark{
+        margin-left: 0.3rem;
+        color: #333;
+      }
+    }
+  }
+
+  .payment-type{
+    display: block;
+    font-size: 1.6rem;
+    color: rgba(43, 43, 43, 0.7);
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    margin: 3.2rem 0 2.6rem 0;
+
+    &.first{
+      margin-top: 0;
+    }
+
+    input{
+      margin-right: 1.7rem;
+      position: relative;
+    }
+
+    img{
+      margin-left: 2.7rem;
+      position: relative;
+      top: 0.2rem;
+    }
+  }
+}

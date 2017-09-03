@@ -1,0 +1,139 @@
+.checkout-summary-table-mobile{
+  .item{
+    display: flex;
+    padding: 3rem 9% 0 0;
+    border-bottom: 1px solid #c3c3c3;
+
+    .left{
+      flex-shrink: 0;
+      flex-basis: 50%;
+
+      img {
+        max-width: 100%;
+        min-width: 80%;
+      }
+    }
+
+    .name{
+      font-size: 1.6rem;
+      color: #636363;
+      letter-spacing: 0.11rem;
+      margin-bottom: 3.5rem;
+      text-transform: capitalize;
+      line-height: 1.25;
+    }
+
+    .remove {
+      text-align: right;
+      margin-bottom: 1.3rem;
+
+      img{
+        cursor: pointer;
+        max-width: 2rem;
+      }
+    }
+
+    .amount{
+      margin-bottom: 4.4rem;
+
+      input{
+        background: #dbdbdb;
+        color : #5c5c5c;
+        border: none;
+        border-radius: 2px;
+        padding: 0.5rem;
+        text-align: center;
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 1.6rem;
+        vertical-align: middle;
+        margin: 0 0.8rem;
+
+        &:disabled {
+          color: #5c5c5c;
+          opacity: 1;
+          -webkit-text-fill-color:#5c5c5c; /* Override iOS font color change */
+        }
+      }
+
+      button {
+        vertical-align: middle;
+        width: 2.6rem;
+        height: 2.6rem;
+        background: #fff;
+        border: 1px solid #c3c3c3;
+        border-radius: 2px;
+        padding: 0;
+
+        &:nth-of-type(2) {
+          background: #4e4e4e;
+          color: #fff;
+        }
+      }
+    }
+
+    .prefix{
+      margin-right: 3rem;
+      font-size: 1.2rem;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .price{
+      font-size: 1.6rem;
+      color: #333;
+      letter-spacing: 0.2rem;
+    }
+
+    .postfix{
+      font-size: 1rem;
+      color: #333;
+      letter-spacing: 0.12rem;
+      margin-bottom: 3.5rem;
+    }
+
+  }
+
+  .row{
+    border-bottom: 1px solid #c3c3c3;
+    padding: 2.5rem 6%;
+    display: flex;
+    font-size: 1.6rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    color: #636363;
+
+    .label{
+      flex-grow: 1;
+    }
+
+    .price{
+      text-align: right;
+    }
+
+    .postfix{
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+
+    &.total{
+      color: #2b2b2b;
+      border-bottom: none;
+      font-weight: bold;
+
+      .no-tax {
+        text-transform: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .row + .row{
+    border-top: none;
+  }
+
+}

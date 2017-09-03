@@ -1,0 +1,84 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src:  url('/common/fonts/30E7F3_B_0.eot');
+  src:  url('/common/fonts/30E7F3_B_0.eot?#iefix') format('embedded-opentype'),
+        url('/common/fonts/30E7F3_B_0.woff2') format('woff2'),
+        url('/common/fonts/30E7F3_B_0.woff') format('woff'),
+        url('/common/fonts/30E7F3_B_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  font-weight: bold;
+  src:  url('/common/fonts/30E7F3_4_0.eot');
+  src:  url('/common/fonts/30E7F3_4_0.eot?#iefix') format('embedded-opentype'),
+        url('/common/fonts/30E7F3_4_0.woff2') format('woff2'),
+        url('/common/fonts/30E7F3_4_0.woff') format('woff'),
+        url('/common/fonts/30E7F3_4_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Larsseit-Thin';
+  src:  url('/common/fonts/30E7F3_9_0.eot');
+  src:  url('/common/fonts/30E7F3_9_0.eot?#iefix') format('embedded-opentype'),
+        url('/common/fonts/30E7F3_9_0.woff2') format('woff2'),
+        url('/common/fonts/30E7F3_9_0.woff') format('woff'),
+        url('/common/fonts/30E7F3_9_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Larsseit-Light';
+  src:  url('/common/fonts/30E7F3_0_0.eot');
+  src:  url('/common/fonts/30E7F3_0_0.eot?#iefix') format('embedded-opentype'),
+        url('/common/fonts/30E7F3_0_0.woff2') format('woff2'),
+        url('/common/fonts/30E7F3_0_0.woff') format('woff'),
+        url('/common/fonts/30E7F3_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  font-style: italic;
+  src:  url('/common/fonts/30E7F3_8_0.eot');
+  src:  url('/common/fonts/30E7F3_8_0.eot?#iefix') format('embedded-opentype'),
+        url('/common/fonts/30E7F3_8_0.woff2') format('woff2'),
+        url('/common/fonts/30E7F3_8_0.woff') format('woff'),
+        url('/common/fonts/30E7F3_8_0.ttf') format('truetype');
+}
+
+#app {
+  font-family: Larsseit, sans-serif;
+
+  input, select, button{
+    font-family: Larsseit, sans-serif;
+  }
+}
+
+.popup-opened{
+  overflow: hidden;
+}
+
+select,
+textarea,
+input:not([type]),
+input[type="password"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+a {
+  color: #8217ff;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

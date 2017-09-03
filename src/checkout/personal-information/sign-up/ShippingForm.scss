@@ -1,0 +1,12 @@
+.shipping-form{
+  .form-control.house{
+    width: 35%
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .form-control.house{
+    width: 40%;
+    margin-left: 1%;
+  }
+}

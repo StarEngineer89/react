@@ -1,0 +1,47 @@
+.form-error{
+  span{
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    color: #F96868;
+    line-height: 2.5rem;
+    min-height: 2.5rem;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+
+    a {
+      color: #F96868;
+    }
+  }
+}
+
+@keyframes validation-show {
+  from {height: 0;}
+  to {height: 2.5rem;}
+}
+
+@keyframes validation-hide {
+  from {height: 2.5rem;}
+  to {height: 0;}
+}
+
+.validation-enter {
+  opacity: 0.01;
+  height: 0;
+  animation: validation-show 500ms;
+}
+
+.validation-enter.validation-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.validation-leave {
+  opacity: 1;
+  animation: validation-hide 300ms;
+}
+
+.validation-leave.validation-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease;
+}

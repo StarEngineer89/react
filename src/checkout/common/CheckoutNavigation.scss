@@ -1,0 +1,32 @@
+.checkout-navigation{
+  display: flex;
+
+  .item{
+    width: 33%;
+    text-align: center;
+    align-self: flex-end;
+    color: #333;
+    font-size: 1.4rem;
+    margin-right: 0.1rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+
+    .line{
+      margin-top: 0.4rem;
+      height: 0.3rem;
+      background: #c3c3c3;
+      border-radius: 2px;
+      -ms-transform: skewX(-45deg); /* IE 9 */
+      -webkit-transform: skewX(-45deg); /* Safari */
+      transform: skewX(-45deg);
+
+      &.active{
+        background: #F6205A;
+      }
+    }
+
+    &:first-child{
+      flex-grow: 1;
+    }
+  }
+}

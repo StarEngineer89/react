@@ -1,0 +1,49 @@
+.forgot-block{
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  padding: 3rem 4%;
+
+  .head{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333;
+    letter-spacing: 0.21rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  .change-action{
+    font-size: 1.4rem;
+    color: #787878;
+    letter-spacing: 0.11rem;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    a{
+      color: #8217ff;
+      cursor: pointer;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .info{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #787878;
+    letter-spacing: 0.09rem;
+    margin-bottom: 2.6rem;
+  }
+  .success{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .next-button {
+    margin-top: 3rem;
+
+    .btn{
+      padding: 1.5rem 3.2rem;
+    }
+  }
+}

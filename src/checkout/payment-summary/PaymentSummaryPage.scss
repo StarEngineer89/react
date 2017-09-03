@@ -1,0 +1,162 @@
+.payment-summary{
+  .top-button{
+    text-align: right;
+    margin-bottom: 3.2rem;
+  }
+  .payment-review{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 2% 3.2rem;
+
+    .title{
+      color: #333;
+      font-size: 1.6rem;
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .text{
+      font-size: 1.6rem;
+      color: rgba(43, 43, 43, 0.7);
+      letter-spacing: 0.1rem;
+
+      span {
+        vertical-align: middle;
+      }
+      img{
+        vertical-align: middle;
+      }
+
+      .row{
+        display: block;
+      }
+
+      .row + .row{
+        margin-top: 0.8rem;
+      }
+    }
+    ul{
+      margin: 0;
+      padding-left: 2rem;
+    }
+
+    ul li{
+      color: rgba(43, 43, 43, 0.7);
+
+      + li{
+        margin-top: 0.8rem;
+      }
+
+      .top{
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+        display: block;
+      }
+      .bottom{
+        margin-top: 0.8rem;
+        font-size: 1.6rem;
+        letter-spacing: 0.06rem;
+        display: block;
+      }
+    }
+  }
+  .payment-summary-message{
+    border : 1px solid #c3c3c3;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 3.6rem 0;
+    letter-spacing: 0.05rem;
+    color: #333;
+
+    a {
+      color: #333;
+
+      &:hover {
+        color: #8217ff;
+      }
+    }
+
+    strong{
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    &.mobile{
+      margin: 4rem 5% 2rem;
+    }
+  }
+  .bd-items .item-row .column-four {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .payment-summary .payment-review {
+    .title{
+      letter-spacing: 0.15rem;
+    }
+    .text{
+      letter-spacing: 0.07rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .payment-summary .payment-review {
+    .title{
+      letter-spacing: 0.1rem;
+    }
+    .text{
+      font-size: 1.6rem;
+      letter-spacing: 0.03rem;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .payment-summary {
+    .top-button {
+      margin: 3.2rem 5%;
+    }
+    .order-footer-mobile{
+      margin-top: 3.2rem;
+    }
+    .payment-review {
+      flex-direction: column;
+      margin: 0 5%;
+      padding-left: 1rem;
+
+      > div{
+        margin-top: 1.6rem;
+      }
+
+      > div.last{
+        order: -1;
+        margin-top: 0;
+      }
+
+      .text img{
+        margin-right: 0.5rem;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .payment-summary {
+    .payment-review {
+
+      .title{
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+      }
+
+      .text{
+        font-size: 1.4rem;
+      }
+
+    }
+  }
+}
